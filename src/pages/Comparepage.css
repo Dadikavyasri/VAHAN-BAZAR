@@ -1,0 +1,88 @@
+.compare-wrapper {
+  padding: 40px;
+  min-height: 100vh;
+
+  /* Bike background */
+  background: url("/images/Ather 450.jpeg") no-repeat center center fixed;
+  background-size: cover;
+
+  /* Overlay to make text readable */
+  position: relative;
+  z-index: 1;
+}
+
+.compare-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* dark overlay */
+  z-index: -1;
+}
+
+.compare-wrapper h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.compare-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.compare-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.bike-block {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 70px;
+  margin-left:80px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  flex: 1;
+  text-align: center;
+}
+
+.bike-block img {
+  max-width: 200px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specs-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.vs-divider {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  align-self: center;
+}

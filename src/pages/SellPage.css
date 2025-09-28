@@ -1,0 +1,96 @@
+.sell-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #0e4b75 50%, #d95f25 50%);
+  color: #fff;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #f1f1f1;
+}
+
+.sell-page {
+  flex: 1;
+  max-width: 980px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  color: #333;
+}
+
+.sell-form .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.sell-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #333;
+}
+
+.sell-form input[type="text"],
+.sell-form input[type="number"],
+.sell-form textarea,
+.sell-form input[type="file"] {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.sell-form textarea { min-height: 100px; resize: vertical; }
+
+.sell-form .full { grid-column: 1 / -1; margin-bottom: 12px; }
+
+.previews {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.previews img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions button {
+  background: #ff802f;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actions button:disabled { opacity: 0.6; cursor: not-allowed; }
